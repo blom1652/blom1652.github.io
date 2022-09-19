@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Ice cream Survey</title>
+  <style>
+    body {
+    background-image: url(https://cdn.pixabay.com/photo/2020/03/01/22/06/ice-cream-4894276_1280.jpg);
+      background-repeat: no repeat;
+      background-size: cover;
+    }
+    
+    h1 {
+        background-color:lightpink;
+        color: white;
+        text-align: center;
+        padding: 15px;
+      }
+
+      fieldset {
+        background-color: white;
+        text-align: center;
+      }
+      
+      p {
+        color: white;
+        text-align: center;
+      }
+
+  </style>
+    
+</head>
+
+
+<body> 
+
+  <h1 id="title">Ice Cream Survey</h1>
+  
+  <p id="description">Thank you for taking our survey!
+  </p>
+  
+
+  <form id="survey form">
+
+
+<fieldset>
+  Name 
+  <input type="text" 
+  id="name-label"
+  placeholder="Enter your name"
+  required><br>
+
+  Email
+  <input type="email"
+  id="email-label"
+  placeholder="Enter your email"
+  required><br>
+
+  Age
+  <input type="number"
+    id="number-label"
+    name="age"
+    min="12"
+    max="100"
+    required><br><br>
+
+  
+  What is your favorite ice cream flavor?
+    <select name="favorite flavor">
+      <option>Select One</option>
+      <option>vanilla</option>
+      <option>chocolate </option>
+      <option>stawberry</option>
+      </select><br><br>
+
+
+  Do you like your ice cream served in a cup or cone?<br>
+    <input type="radio" name="cup">Cup
+    <input type="radio" name="cone">Cone 
+    <br><br>
+
+
+  What are your favorite toppings?<br>
+
+    <input type="checkbox"      name="toppings"  value="sprinkles">Sprinkles<br>
+
+    <input type="checkbox"  name="toppings"  value="cherries"> Cherries<br>
+
+    <input type="checkbox"  name="toppings"  value="hot fudge"> Hot Fudge<br>
+
+    <input type="checkbox"  name="toppings"  value="whipped cream"> Whipped Cream<br><br>
+
+
+  Any comments or suggestions?<br>
+  <textarea name="comments">
+  </textarea><br>
+
+
+<button id="submit">Submit All</button>
+</fieldset>
+
+
+  
+  
+
+
+
+
+</form>
+
+</body>
+</html>
